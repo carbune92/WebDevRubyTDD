@@ -3,7 +3,7 @@ require './pascalstriangle.rb'
 
 class TestPascalsTriangle < Test::Unit::TestCase
 
-=begin
+begin
   # First row must be [1]
   def test_scenario_1
     # Arrange (a.k.a. define input)
@@ -20,9 +20,9 @@ class TestPascalsTriangle < Test::Unit::TestCase
       failure_message = 'The computed first row is not [1] as expected'
     )
   end # def test_scenario_1
-=end
+end
 
-=begin
+begin
   # Second row must be [1,1]
   def test_scenario_2
     # Arrange (a.k.a. define input)
@@ -39,9 +39,9 @@ class TestPascalsTriangle < Test::Unit::TestCase
       failure_message = 'The computed second row is not [1,1] as expected'
     )
   end # def test_scenario_2
-=end
+end
 
-=begin
+begin
   # Fifth row must be [1,4,6,4,1]
   def test_scenario_5
     # Arrange (a.k.a. define input)
@@ -58,9 +58,9 @@ class TestPascalsTriangle < Test::Unit::TestCase
       failure_message = 'The computed fifth row is not [1,4,6,4,1] as expected'
     )
   end # def test_scenario_5
-=end
+end
 
-=begin
+begin
   # The third element of row 1000 should be 498501
   def test_scenario_1000
     # Arrange (a.k.a. define input)
@@ -77,9 +77,9 @@ class TestPascalsTriangle < Test::Unit::TestCase
       failure_message = 'The computed third element of row 1000 is not 498501 as expected'
     )
   end # def test_scenario_1000
-=end
+end
 
-=begin
+begin
   def test_invalid_input_scenario
     # Arrange (a.k.a. define input)
     n = '1'
@@ -94,7 +94,7 @@ class TestPascalsTriangle < Test::Unit::TestCase
       failure_message = 'The function does not return nil when presented with invalid input'
     )
   end # def test_invalid_input_scenario
-=end
+end
 
 end
 
